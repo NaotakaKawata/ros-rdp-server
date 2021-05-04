@@ -41,9 +41,9 @@ If you use Docker Hub image, you can execute it with the following command.
 In the example below, remote desktop connection is possible with 13389port and SSH connection is possible with 10022port.
 ```
 #melodic
-$ docker run --rm -it -p 13389:3389 -p 10022:22 --shm-size=256m naotakakawata/melodic-rdp-server
+$ docker run --rm -it -p 13389:3389 -p 10022:22 --shm-size=1024m <absolute pathname on host>:/home/user/Workdir/:rw naotakakawata/melodic-rdp-server
 #noetic
-$ docker run --rm -it -p 13389:3389 -p 10022:22 --shm-size=256m naotakakawata/noetic-rdp-server
+$ docker run --rm -it -p 13389:3389 -p 10022:22 --shm-size=1024m <absolute pathname on host>:/home/user/Workdir/:rw naotakakawata/noetic-rdp-server
 ```
 
 ---
